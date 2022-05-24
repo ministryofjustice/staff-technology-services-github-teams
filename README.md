@@ -24,3 +24,11 @@ Add a new item in the `github_teams` value in the `locals` in `teams.tf` file. U
 ```
 
 Create a new PR to this repo. Once the PR has been merged, the new team will be created.
+
+## How to run this terraform locally?
+
+If you wish to run this terraform locally, make sure the value for `AWS_PROFILE` in the `.env` file is set to MoJO Shared Services AWS Cli profile.
+
+Create a personal GitHub token and provide as value for `github_token` in the `terraform.tfvars` file.
+
+Tip: Feel free to copy `.env.example` to `.env` and `terraform.tfvars.example` to `terraform.tfvars`.

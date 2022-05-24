@@ -1,3 +1,12 @@
+terraform {
+  backend "s3" {
+    bucket         = "staff-technology-services-github-teams-core-tf-state"
+    dynamodb_table = "staff-technology-services-github-teams-core-tf-lock-table"
+    key            = "terraform.global.state"
+    region         = "eu-west-2"
+  }
+}
+
 provider "github" {
   token = var.github_token
   owner = var.github_owner
