@@ -40,7 +40,6 @@ locals {
         "staff-device-logging-dns-dhcp-integration-tests",
         "staff-device-logging-infrastructure",
         "staff-device-logging-syslog-to-cloudwatch",
-        "staff-device-management-intune-scripts",
         "staff-device-private-dns-zone",
         "staff-device-shared-services-infrastructure",
         "staff-infrastructure-admin-sso",
