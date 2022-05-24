@@ -4,16 +4,17 @@ provider "github" {
   alias = "mojo"
 }
 
-module "test_team_delete_me" {
+module "github_team" {
   source = "./modules/team"
 
-  team_name        = "test-team-please-delete-me-too"
-  team_description = "This is a test team. Please delete me."
-  team_maintainers = ["ASTRobinson"]
-  team_members     = ["wanieldilson", "mitchdawson1982"]
+  for_each = local.github_teams
 
-  team_repositories = ["cloud-operations"]
-  permission        = "admin"
+  team_name         = each.key
+  team_description  = each.value.description
+  team_maintainers  = each.value.team_maintainers
+  team_members      = each.value.team_members
+  team_repositories = each.value.team_repositories
+  permission        = each.value.permission
 
   providers = {
     github = github.mojo
