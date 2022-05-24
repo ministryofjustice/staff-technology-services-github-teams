@@ -56,6 +56,7 @@ locals {
         "staff-infrastructure-network-operations",
         "staff-infrastructure-network-services",
         "staff-infrastructure-smtp-relay-server",
+        "staff-technology-services-github-teams",
         "tech-docs-monitor",
         "terraform-panorama-config",
         "transit-gateways"
