@@ -1,3 +1,5 @@
+[![Terraform CI](https://github.com/ministryofjustice/staff-technology-services-github-teams/actions/workflows/terraform-ci.yaml/badge.svg)](https://github.com/ministryofjustice/staff-technology-services-github-teams/actions/workflows/terraform-ci.yaml)
+
 # Staff Technology Services GitHub Teams
 
 Terraform to define and maintain a list of GitHub team for the Technology Services team.
@@ -32,3 +34,15 @@ If you wish to run this terraform locally, make sure the value for `AWS_PROFILE`
 Create a personal GitHub token and provide as value for `github_token` in the `terraform.tfvars` file.
 
 Tip: Feel free to copy `.env.example` to `.env` and `terraform.tfvars.example` to `terraform.tfvars`.
+
+Make sure you are using the terraform workspace called `github`.
+
+```
+make workspace
+```
+
+Then use Makefile targets to run the terraform locally:
+
+```
+make apply
+```

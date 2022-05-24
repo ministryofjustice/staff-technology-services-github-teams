@@ -11,10 +11,13 @@ init:
 validate:
 	terraform validate
 
-plan:
+workspace:
+	terraform workspace select github || terraform workspace new github
+
+plan: workspace
 	terraform plan -out terraform.tfplan
 
-apply:
+apply: workspace
 	terraform apply
 
 destroy:
