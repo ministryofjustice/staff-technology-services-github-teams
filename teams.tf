@@ -1,6 +1,6 @@
 locals {
   github_teams = {
-    technology-services-cloud-operations-admins = {
+    cloud-ops-admins = {
       description = "To provide administrator access of various repos to Cloud Operations team."
       team_maintainers = [
 
@@ -65,7 +65,7 @@ locals {
       permission = "admin"
     }
 
-    technology-services-cloud-operations-writers = {
+    cloud-ops-writers = {
       description = "To provide writer access of various repos to Cloud Operations team."
       team_maintainers = [
 
