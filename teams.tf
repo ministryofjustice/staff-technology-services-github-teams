@@ -6,6 +6,8 @@ locals {
 
       ]
       team_members = [
+        "yusufsheiqh",
+        "emileswarts",
         "bagg3rs",
         "MatthewWhiteMoJ",
         "mTouhid",
