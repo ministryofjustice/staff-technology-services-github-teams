@@ -4,6 +4,7 @@ locals {
       description = "To provide administrator access of various repos to Cloud Operations team."
       team_maintainers = [
         "ASTRobinson",
+        "Gary-H9",
         "kyphutruong",
         "mitchdawson1982",
         "mTouhid",
@@ -13,7 +14,6 @@ locals {
         "emileswarts",
         "bagg3rs",
         "andycohen",
-        "Gary-H9",
         "moontune",
         "tommoj"
       ]
