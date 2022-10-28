@@ -13,7 +13,6 @@ locals {
       team_members = [
         "emileswarts",
         "bagg3rs",
-        "MatthewWhiteMoJ",
         "andycohen",
         "moontune",
         "tommoj"
