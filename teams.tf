@@ -3,19 +3,19 @@ locals {
     cloud-ops-admins = {
       description = "To provide administrator access of various repos to Cloud Operations team."
       team_maintainers = [
-
+        "ASTRobinson",
+        "Gary-H9",
+        "kyphutruong",
+        "mitchdawson1982",
+        "mTouhid",
+        "staff-infrastructure-moj"
       ]
       team_members = [
         "emileswarts",
         "bagg3rs",
         "MatthewWhiteMoJ",
-        "mTouhid",
-        "ASTRobinson",
-        "mitchdawson1982",
-        "Gary-H9",
         "andycohen",
         "moontune",
-        "kyphutruong",
         "tommoj"
       ]
       team_repositories = [
