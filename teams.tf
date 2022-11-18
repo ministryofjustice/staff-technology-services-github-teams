@@ -67,10 +67,16 @@ locals {
     cloud-ops-writers = {
       description = "To provide writer access of various repos to Cloud Operations team."
       team_maintainers = [
-
+        "staff-infrastructure-moj",
+        "ASTRobinson"
       ]
       team_members = [
-        "rwinstanley1"
+        "rwinstanley1",
+        "tomwells98",
+        "TariqMahmood4",
+        "jennycasanova",
+        "ChinyereOnuoha"
+
       ]
       team_repositories = [
         "nvvs-devops",
@@ -186,10 +192,15 @@ locals {
     nvvs-devops-writers = {
       description = "To provide writer access of various repos to NVVS DevOps team."
       team_maintainers = [
-
+        "staff-infrastructure-moj",
+        "ASTRobinson"
       ]
       team_members = [
-        "rwinstanley1"
+        "rwinstanley1",
+        "tomwells98",
+        "TariqMahmood4",
+        "jennycasanova",
+        "ChinyereOnuoha"
       ]
       team_repositories = [
         "nvvs-devops",
