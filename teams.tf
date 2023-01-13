@@ -15,7 +15,8 @@ locals {
         "bagg3rs",
         "andycohen",
         "moontune",
-        "tommoj"
+        "tommoj",
+        "dms1981"
       ]
       team_repositories = [
         "nvvs-devops",
