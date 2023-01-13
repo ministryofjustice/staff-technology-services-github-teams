@@ -11,9 +11,7 @@ locals {
         "staff-infrastructure-moj"
       ]
       team_members = [
-        "emileswarts",
         "bagg3rs",
-        "andycohen",
         "moontune",
         "tommoj",
         "dms1981"
@@ -67,11 +65,8 @@ locals {
         "ASTRobinson"
       ]
       team_members = [
-        "rwinstanley1",
         "tomwells98",
-        "TariqMahmood4",
-        "jennycasanova",
-        "ChinyereOnuoha"
+        "jennycasanova"
       ]
       team_repositories = [
         "nvvs-devops",
