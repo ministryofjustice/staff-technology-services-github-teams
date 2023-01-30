@@ -11,7 +11,6 @@ locals {
         "staff-infrastructure-moj"
       ]
       team_members = [
-        "bagg3rs",
         "moontune",
         "tommoj",
         "dms1981"
