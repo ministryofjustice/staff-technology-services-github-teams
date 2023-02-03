@@ -13,7 +13,9 @@ locals {
       team_members = [
         "moontune",
         "tommoj",
-        "dms1981"
+        "dms1981",
+        "A-Naqvi",
+        "juddin927"
       ]
       team_repositories = [
         "nvvs-devops",
