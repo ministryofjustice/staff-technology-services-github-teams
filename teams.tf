@@ -14,7 +14,6 @@ locals {
         "moontune",
         "tommoj",
         "dms1981",
-        "A-Naqvi",
         "juddin927"
       ]
       team_repositories = [
