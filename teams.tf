@@ -14,9 +14,9 @@ locals {
         "smjmoj",
         "staff-infrastructure-moj"
       ]
-      team_members = [        
+      team_members = [
         "dms1981",
-        "moontune",       
+        "moontune",
         "tommoj"
       ]
       team_repositories = [
