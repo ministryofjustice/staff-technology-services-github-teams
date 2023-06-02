@@ -11,12 +11,13 @@ locals {
         "staff-infrastructure-moj"
       ]
       team_members = [
-        "moontune",
-        "tommoj",
+        "darey-io",
         "dms1981",
         "juddin927",
+        "moontune",
+        "satishgummadellimoj",
         "smjmoj",
-        "satishgummadellimoj"
+        "tommoj"
       ]
       team_repositories = [
         "nvvs-devops",
