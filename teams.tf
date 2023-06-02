@@ -4,19 +4,19 @@ locals {
       description = "To provide administrator access of various repos to the NVVS DevOps team."
       team_maintainers = [
         "ASTRobinson",
+        "darey-io",
         "Gary-H9",
+        "juddin927",
         "kyphutruong",
         "mitchdawson1982",
         "mTouhid",
+        "satishgummadellimoj",
+        "smjmoj",
         "staff-infrastructure-moj"
       ]
       team_members = [
-        "darey-io",
         "dms1981",
-        "juddin927",
         "moontune",
-        "satishgummadellimoj",
-        "smjmoj",
         "tommoj"
       ]
       team_repositories = [
