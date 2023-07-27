@@ -6,6 +6,8 @@ Terraform to define and maintain a list of GitHub team for the Technology Servic
 
 ## How to add a new team?
 
+The GitHub user needs to already be added to the MOJ Github Organisation, ensure that is already the case before proceeding.
+
 Add a new item in the `github_teams` value in the `locals` in `teams.tf` file. Use the below as guide.
 
 ```
