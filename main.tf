@@ -1,7 +1,7 @@
 terraform {
   backend "s3" {
-    bucket         = "staff-technology-services-github-teams-core-tf-state"
-    dynamodb_table = "staff-technology-services-github-teams-core-tf-lock-table"
+    bucket         = "staff-ci-technology-services-client-github-teams-tf-state"
+    dynamodb_table = "staff-ci-technology-services-client-github-teams-tf-lock-table"
     key            = "terraform.global.state"
     region         = "eu-west-2"
   }
