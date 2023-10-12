@@ -40,7 +40,7 @@ Tip: Feel free to copy `.env.example` to `.env` and `terraform.tfvars.example` t
 Make sure you are using the terraform workspace called `github`.
 
 ```
-make workspace
+make workspace-select
 ```
 
 Then use Makefile targets to run the terraform locally:
