@@ -3,24 +3,51 @@ include .env
 export
 
 fmt:
-	terraform fmt --recursive
+	aws-vault exec $$AWS_VAULT_PROFILE -- terraform fmt --recursive
 
 init:
-	terraform init -reconfigure -reconfigure
+	aws-vault exec $$AWS_VAULT_PROFILE -- terraform init
+
+workspace-list:
+	aws-vault exec $$AWS_VAULT_PROFILE -- terraform workspace list
+
+workspace-select:
+	aws-vault exec $$AWS_VAULT_PROFILE -- terraform workspace select $$ENV || \
+	aws-vault exec $$AWS_VAULT_PROFILE -- terraform workspace new $$ENV
 
 validate:
-	terraform validate
+	aws-vault exec $$AWS_VAULT_PROFILE -- terraform validate
 
-workspace:
-	terraform workspace select github || terraform workspace new github
+plan-out:
+	aws-vault exec $$AWS_VAULT_PROFILE -- terraform plan -no-color > $$ENV.tfplan
 
-plan: workspace
-	terraform plan -out terraform.tfplan
+plan:
+	aws-vault exec $$AWS_VAULT_PROFILE -- terraform plan
 
-apply: workspace
-	terraform apply
+refresh:
+	aws-vault exec $$AWS_VAULT_PROFILE -- terraform refresh
 
-destroy:
-	terraform destroy
+output:
+	aws-vault exec $$AWS_VAULT_PROFILE -- terraform output -json
 
-.PHONY: fmt init validate plan apply destroy
+apply:
+	aws-vault exec $$AWS_VAULT_PROFILE -- terraform apply
+
+state-list:
+	aws-vault exec $$AWS_VAULT_PROFILE -- terraform state list
+
+show:
+	aws-vault exec $$AWS_VAULT_PROFILE -- terraform show -no-color
+
+# destroy:
+# 	aws-vault exec $$AWS_VAULT_PROFILE -- terraform destroy
+
+clean:
+	rm -rf .terraform/ terraform.tfstate*
+
+tfenv:
+	tfenv use $(cat versions.tf 2> /dev/null | grep required_version | cut -d "\"" -f 2 | cut -d " " -f 2) && tfenv pin
+
+.PHONY:
+	fmt init workspace-list workspace-select validate plan-out plan \
+	refresh output apply state-list show destroy clean tfenv
