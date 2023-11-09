@@ -71,7 +71,8 @@ locals {
         "tomwells98",
         "jennycasanova",
         "babatundek",
-        "NNavickas1"
+        "NNavickas1",
+        "ukshreya"
       ]
       team_repositories = [
         "nvvs-devops",
