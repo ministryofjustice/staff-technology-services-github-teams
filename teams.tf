@@ -70,7 +70,8 @@ locals {
       team_members = [
         "tomwells98",
         "jennycasanova",
-        "babatundek"
+        "babatundek",
+        "NNavickas1"
       ]
       team_repositories = [
         "nvvs-devops",
