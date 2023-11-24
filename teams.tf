@@ -55,7 +55,9 @@ locals {
         "staff-infrastructure-smtp-relay-server",
         "staff-technology-services-github-teams",
         "terraform-panorama-config",
-        "transit-gateways"
+        "transit-gateways",
+        "juniper-mist-integration",
+        "juniper-mist-integration-spike"
       ]
       permission = "admin"
     }
