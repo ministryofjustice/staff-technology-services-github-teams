@@ -11,7 +11,6 @@ locals {
         "kyphutruong",
         "mitchdawson1982",
         "mTouhid",
-        "satishgummadellimoj",
         "smjmoj",
         "staff-infrastructure-moj"
       ]
