@@ -1,5 +1,5 @@
 locals {
-  team_repositories = [
+  common_team_repositories_for_all_groups = [
     "nvvs-devops",
     "nvvs-devops-github-actions",
     "cloud-operations-slack-bot",
@@ -37,8 +37,7 @@ locals {
     "terraform-panorama-config",
     "transit-gateways",
     "juniper-mist-integration",
-    "juniper-mist-integration-spike",
-    "tech-docs-monitor"
+    "juniper-mist-integration-spike"
   ]
   github_teams = {
     nvvs-devops-admins = {
@@ -60,7 +59,7 @@ locals {
         "moontune",
         "tommoj"
       ]
-      team_repositories = local.team_repositories
+      team_repositories = local.common_team_repositories_for_all_groups
       permission        = "admin"
     }
 
@@ -77,8 +76,11 @@ locals {
         "NNavickas1",
         "ukshreya"
       ]
-      team_repositories = local.team_repositories
-      permission        = "push"
+      team_repositories = concat(
+        local.common_team_repositories_for_all_groups,
+        ["tech-docs-monitor"]
+      )
+      permission = "push"
     }
   }
 }
