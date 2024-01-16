@@ -52,7 +52,8 @@ locals {
         "mitchdawson1982",
         "mTouhid",
         "smjmoj",
-        "staff-infrastructure-moj"
+        "staff-infrastructure-moj",
+        "sb21460"
       ]
       team_members = [
         "dms1981",
