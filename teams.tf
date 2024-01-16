@@ -57,6 +57,7 @@ locals {
       team_members = [
         "dms1981",
         "moontune",
+        "sb21460",
         "tommoj"
       ]
       team_repositories = local.common_team_repositories_for_all_groups
