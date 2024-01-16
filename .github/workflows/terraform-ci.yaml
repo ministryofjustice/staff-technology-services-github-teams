@@ -28,11 +28,11 @@ jobs:
     steps:
     # Checkout the repository to the GitHub Actions runner
     - name: Checkout
-      uses: actions/checkout@v3
+      uses: actions/checkout@v4
 
     # Configure AWS credentials
     - name: Configure AWS Credentials
-      uses: aws-actions/configure-aws-credentials@v2
+      uses: aws-actions/configure-aws-credentials@v4
       with:
         aws-region: eu-west-2
         role-to-assume: ${{ secrets.AWS_ROLE_TO_ASSUME }}
@@ -42,7 +42,7 @@ jobs:
     - name: Setup Terraform
       uses: hashicorp/setup-terraform@v3
       with:
-        terraform_version: 1.2.1
+        terraform_version: 1.5.4
 
     # Initialize a new or existing Terraform working directory by creating initial files, loading any remote state, downloading modules, etc.
     - name: Terraform Init
