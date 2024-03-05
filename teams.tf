@@ -56,6 +56,7 @@ locals {
       ]
       team_members = [
         "dms1981",
+        "laurentb4",
         "moontune",
         "sb21460",
         "tommoj"
