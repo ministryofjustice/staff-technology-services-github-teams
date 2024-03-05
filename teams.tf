@@ -73,10 +73,10 @@ locals {
       ]
       team_members = [
         "tomwells98",
-#        "jennycasanova",
+        #        "jennycasanova",
         "babatundek",
-        "NNavickas1",
-#        "ukshreya"
+        "NNavickas1" #,
+        #        "ukshreya"
       ]
       team_repositories = concat(
         local.common_team_repositories_for_all_groups,
