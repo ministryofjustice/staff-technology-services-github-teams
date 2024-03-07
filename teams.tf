@@ -55,6 +55,7 @@ locals {
         "staff-infrastructure-moj"
       ]
       team_members = [
+        "asifamirat00",
         "dms1981",
         "laurentb4",
         "moontune",
