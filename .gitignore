@@ -1,6 +1,3 @@
-# ignore local environment variables files
-.env
-
 # Local .terraform directories
 **/.terraform/*
 
