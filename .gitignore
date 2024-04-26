@@ -46,4 +46,4 @@ VpnCerts
 .terraform-version
 
 # Terraform lockfile
-.terraform.lock.hcl
+#.terraform.lock.hcl
