@@ -30,6 +30,12 @@ jobs:
     - name: Checkout
       uses: actions/checkout@v4
 
+    - name: Set specified Terraform Version
+      run: |
+        tf_version=$(cat versions.tf 2> /dev/null | grep required_version | cut -d "\"" -f 2)
+        echo "Terraform version specified is: $tf_version"
+        echo "TFVERSION=${tf_version}" >> $GITHUB_ENV
+
     # Configure AWS credentials
     - name: Configure AWS Credentials
       uses: aws-actions/configure-aws-credentials@v4
@@ -42,7 +48,7 @@ jobs:
     - name: Setup Terraform
       uses: hashicorp/setup-terraform@v3
       with:
-        terraform_version: 1.5.4
+        terraform_version:  ${{ env.TFVERSION }}
 
     # Initialize a new or existing Terraform working directory by creating initial files, loading any remote state, downloading modules, etc.
     - name: Terraform Init

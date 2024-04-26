@@ -1,6 +1,3 @@
-# ignore local environment variables files
-.env
-
 # Local .terraform directories
 **/.terraform/*
 
@@ -49,4 +46,4 @@ VpnCerts
 .terraform-version
 
 # Terraform lockfile
-.terraform.lock.hcl
+#.terraform.lock.hcl
