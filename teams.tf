@@ -57,6 +57,7 @@ locals {
       ]
       team_members = [
         "dms1981",
+        "johnnolan", # temp addition for PKI access, remove 24/05/24
         "moontune",
         "sb21460",
         "tommoj"
