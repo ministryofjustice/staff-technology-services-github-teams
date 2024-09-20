@@ -3,6 +3,7 @@ locals {
     "PaloAlto-pipelines",
     "cloud-operations-slack-bot",
     "deployment-tgw",
+    "diso-devops-module-ssm-bastion",
     "juniper-mist-integration",
     "juniper-mist-integration-spike",
     "mojo-aws-github-oidc-provider",
