@@ -1,17 +1,23 @@
 locals {
   common_team_repositories_for_all_groups = [
-    "nvvs-devops",
-    "nvvs-devops-github-actions",
+    "PaloAlto-pipelines",
     "cloud-operations-slack-bot",
-    "mojo-aws-github-oidc-provider",
     "deployment-tgw",
+    "diso-devops-ami-builder",
+    "diso-devops-module-ssm-bastion",
+    "juniper-mist-integration",
+    "juniper-mist-integration-spike",
+    "linuxify",
+    "mojo-aws-github-oidc-provider",
     "network-access-control-admin",
     "network-access-control-disaster-recovery",
     "network-access-control-infrastructure",
     "network-access-control-integration-tests",
     "network-access-control-server",
+    "nvvs-containers",
+    "nvvs-devops",
+    "nvvs-devops-github-actions",
     "nvvs-devops-monitor",
-    "PaloAlto-pipelines",
     "staff-device-dhcp-server",
     "staff-device-dns-dhcp-admin",
     "staff-device-dns-dhcp-disaster-recovery",
@@ -35,9 +41,7 @@ locals {
     "staff-infrastructure-smtp-relay-server",
     "staff-technology-services-github-teams",
     "terraform-panorama-config",
-    "transit-gateways",
-    "juniper-mist-integration",
-    "juniper-mist-integration-spike"
+    "transit-gateways"
   ]
   github_teams = {
     nvvs-devops-admins = {
