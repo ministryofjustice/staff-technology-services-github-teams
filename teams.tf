@@ -45,23 +45,23 @@ locals {
   ]
   github_teams = {
     nvvs-devops-admins = {
-      description = "To provide administrator access of various repos to the NVVS DevOps team."
+      description = "To provide administrator access of various repos to the ~NVVS~ DISO DevOps team."
       team_maintainers = [
-        "asifamirat00",
-        "ASTRobinson",
-        "Gary-H9",
-        "jamesgreen-moj",
-        "juddin927",
-        "kyphutruong",
-        "laurentb4",
-        "mitchdawson1982",
-        "smjmoj",
+        "asifamirat00",    # Asif
+        "ASTRobinson",     # Aaron
+        "Gary-H9",         # Gary
+        "jamesgreen-moj",  # James
+        "juddin927",       # Jahir
+        "kyphutruong",     # Ky
+        "laurentb4",       # Lauren
+        "mitchdawson1982", # Mitch
+        "sb21460",         # Sandy
+        "smjmoj",          # Steve
         "staff-infrastructure-moj"
       ]
       team_members = [
         "dms1981",
         "moontune",
-        "sb21460",
         "tommoj"
       ]
       team_repositories = local.common_team_repositories_for_all_groups
@@ -69,7 +69,7 @@ locals {
     }
 
     nvvs-devops-writers = {
-      description = "To provide writer access of various repos to the NVVS DevOps team."
+      description = "To provide writer access of various repos to the ~NVVS~ DISO DevOps team."
       team_maintainers = [
         "staff-infrastructure-moj",
         "ASTRobinson"
