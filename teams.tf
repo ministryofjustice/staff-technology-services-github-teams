@@ -55,7 +55,6 @@ locals {
         "kyphutruong",
         "laurentb4",
         "mitchdawson1982",
-        "mTouhid",
         "smjmoj",
         "staff-infrastructure-moj"
       ]
