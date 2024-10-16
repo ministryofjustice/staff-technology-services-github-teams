@@ -57,7 +57,6 @@ locals {
         "laurentb4",       # Lauren
         "mitchdawson1982", # Mitch
         "sb21460",         # Sandy
-        "smjmoj",          # Steve
         "staff-infrastructure-moj"
       ]
       team_members = [
