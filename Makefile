@@ -91,6 +91,9 @@ lock: ## terraform providers lock (reset hashes after upgrades prior to commit)
 	rm .terraform.lock.hcl
 	$(DOCKER_RUN) terraform providers lock -platform=windows_amd64 -platform=darwin_amd64 -platform=linux_amd64
 
+.PHONY: unlock
+unlock: ## Terraform unblock (make unlock ID=xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx)
+	$(DOCKER_RUN) /bin/bash -c "terraform force-unlock ${ID}"
 
 .PHONY: clean
 clean: ## clean terraform cached providers etc
