@@ -52,7 +52,6 @@ locals {
         "ASTRobinson",     # Aaron
         "Gary-H9",         # Gary
         "jamesgreen-moj",  # James
-        "juddin927",       # Jahir
         "kyphutruong",     # Ky
         "laurentb4",       # Lauren
         "mitchdawson1982", # Mitch
