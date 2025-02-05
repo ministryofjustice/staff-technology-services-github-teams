@@ -56,7 +56,8 @@ locals {
         "laurentb4",       # Lauren
         "mitchdawson1982", # Mitch
         "sb21460",         # Sandy
-        "staff-infrastructure-moj"
+        "staff-infrastructure-moj",
+        "operations-engineering-servicenow"
       ]
       team_members = [
         "dms1981",
