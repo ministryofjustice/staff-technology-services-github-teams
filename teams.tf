@@ -60,8 +60,8 @@ locals {
         "operations-engineering-servicenow",
         #TODO remove Shuja, Nicholas and Mohamed once a admin account group is created for shared-services
         "shujauddinmoj", #Shuja Uddin
-        "TaRaKaN8", #Nicholas Fan
-        "Nasirmohamed1" #Mohamed Nasir
+        "TaRaKaN8",      #Nicholas Fan
+        "Nasirmohamed1"  #Mohamed Nasir
       ]
       team_members = [
         "dms1981",
