@@ -47,8 +47,8 @@ locals {
     nvvs-devops-admins = {
       description = "To provide administrator access of various repos to the ~NVVS~ DISO DevOps team."
       team_maintainers = [
-        "AafAnsari",       # Aafreen
-        "asifamirat00",    # Asif
+        "AafAnsari", # Aafreen
+        #"asifamirat00",    # Asif
         "ASTRobinson",     # Aaron
         "Gary-H9",         # Gary
         "jamesgreen-moj",  # James
@@ -56,6 +56,7 @@ locals {
         "laurentb4",       # Lauren
         "mitchdawson1982", # Mitch
         "sb21460",         # Sandy
+        "mahmoodcli",      # Mahmood
         "staff-infrastructure-moj",
         "operations-engineering-servicenow",
         #TODO remove Shuja, Nicholas and Mohamed once a admin account group is created for shared-services
