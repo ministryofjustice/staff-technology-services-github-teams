@@ -63,7 +63,8 @@ locals {
         #TODO remove Shuja, Nicholas and Mohamed once a admin account group is created for shared-services
         "shujauddinmoj", #Shuja Uddin
         "TaRaKaN8",      #Nicholas Fan
-        "Nasirmohamed1"  #Mohamed Nasir
+        "Nasirmohamed1",  #Mohamed Nasir
+        "Farhan-Salahuddin" #Farhan Salahuddin
       ]
       team_members = [
         "dms1981",
