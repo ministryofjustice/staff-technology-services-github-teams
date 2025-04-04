@@ -58,6 +58,7 @@ locals {
         "sb21460",         # Sandy
         "m1moj",           # Mahmood
         "suresh8811",      # Suresh
+        "shahzad-MOJ",     # Shahzad
         "staff-infrastructure-moj",
         "operations-engineering-servicenow",
         #TODO remove Shuja, Nicholas and Mohamed once a admin account group is created for shared-services
