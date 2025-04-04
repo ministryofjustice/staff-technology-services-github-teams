@@ -57,6 +57,7 @@ locals {
         "mitchdawson1982", # Mitch
         "sb21460",         # Sandy
         "m1moj",           # Mahmood
+        "shahzad-MOJ",     # Shahzad
         "suri8811",        # Suresh
         "staff-infrastructure-moj",
         "operations-engineering-servicenow",
