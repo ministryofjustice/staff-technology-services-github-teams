@@ -22,7 +22,7 @@ jobs:
         shell: bash
     env:
         ENV: "github"
-        TF_VAR_github_token: ${{ secrets.TECH_SERVICES_GITHUB_TOKEN }}
+        TF_VAR_github_token: ${{ secrets.GITHUB_TOKEN }}
         TF_VAR_github_owner: "ministryofjustice"
 
     steps:
@@ -49,6 +49,10 @@ jobs:
       uses: hashicorp/setup-terraform@v3
       with:
         terraform_version:  ${{ env.TFVERSION }}
+
+    # Unlock Terraform state if locked
+    - name: Unlock Terraform State
+      run: terraform force-unlock -force || echo "No lock to release"
 
     # Initialize a new or existing Terraform working directory by creating initial files, loading any remote state, downloading modules, etc.
     - name: Terraform Init
