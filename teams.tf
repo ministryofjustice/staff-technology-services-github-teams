@@ -58,7 +58,6 @@ locals {
         "sb21460",         # Sandy
         "m1moj",           # Mahmood
         "shahzad-MOJ",     # Shahzad
-        "mkidrees",        # Mohamed 
         "suri8811",        # Suresh
         "staff-infrastructure-moj",
         "operations-engineering-servicenow",
