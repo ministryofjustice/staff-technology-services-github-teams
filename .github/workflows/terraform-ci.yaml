@@ -50,10 +50,6 @@ jobs:
       with:
         terraform_version:  ${{ env.TFVERSION }}
 
-    # Unlock Terraform state if locked
-    - name: Unlock Terraform State
-      run: terraform force-unlock -force || echo "No lock to release"
-
     # Initialize a new or existing Terraform working directory by creating initial files, loading any remote state, downloading modules, etc.
     - name: Terraform Init
       run: terraform init -reconfigure
