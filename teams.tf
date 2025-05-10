@@ -48,7 +48,7 @@ locals {
       description = "To provide administrator access of various repos to the ~NVVS~ DISO DevOps team."
       team_maintainers = [
         "aaf-moj", # Aafreen
-        #"asifamirat00",    # Asif
+        "asifamirat00",    # Asif
         "ASTRobinson",     # Aaron
         "Gary-H9",         # Gary
         "jamesgreen-moj",  # James
@@ -56,7 +56,7 @@ locals {
         "laurentb4",       # Lauren
         "mitchdawson1982", # Mitch
         "sb21460",         # Sandy
-        "m1moj",           # Mahmood
+        "SMAMoJ",          # Shahid Mahmood
         "shahzad-MOJ",     # Shahzad
         "suri8811",        # Suresh
         "staff-infrastructure-moj",
