@@ -47,7 +47,7 @@ locals {
     nvvs-devops-admins = {
       description = "To provide administrator access of various repos to the ~NVVS~ DISO DevOps team."
       team_maintainers = [
-        "aaf-moj", # Aafreen
+        "aaf-moj",         # Aafreen
         "asifamirat00",    # Asif
         "ASTRobinson",     # Aaron
         "Gary-H9",         # Gary
