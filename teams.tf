@@ -69,7 +69,8 @@ locals {
       team_members = [
         "dms1981",
         "moontune",
-        "tommoj"
+        "tommoj",
+        "ozmondo"
       ]
       team_repositories = local.common_team_repositories_for_all_groups
       permission        = "admin"
